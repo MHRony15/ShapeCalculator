@@ -1,17 +1,16 @@
 package shapeCalc;
 
 public class ShapeCalcController {
-	public ShapeCalcController() {
-		System.out.println("Hello");
-		
-	}
-
 	
-	public static void main(String[] arg) {
-		ShapeCalcController sc = new ShapeCalcController();
-		
+	private ShapeCalc shapeCalc;
+	public ShapeCalcController() {
+		this.shapeCalc = new ShapeCalc("Shape Calculator");
+		this.shapeCalc.validate();
+		this.shapeCalc.setVisible(true);
 	}
-
+	public static void main(String[] args) {
+		new ShapeCalcController();
+	}
 	
 	
 	
