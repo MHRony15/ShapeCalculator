@@ -1,18 +1,19 @@
 package shapeCalc;
 
 public class ShapeCalcController {
-	
-	private ShapeCalc shapeCalc;
-	public ShapeCalcController() {
-		this.shapeCalc = new ShapeCalc("Shape Calculator");
-		this.shapeCalc.validate();
-		this.shapeCalc.setVisible(true);
+	ShapeCalc shapeCalc;
+	public ShapeCalcController(String title) {
+		// TODO Auto-generated constructor stub
+		shapeCalc =new ShapeCalc(title);
+		shapeCalc.validate();
+		shapeCalc.setVisible(true);
 	}
+	
 	public static void main(String[] args) {
-		new ShapeCalcController();
-	}
-	
-	
-	
-}
+		// TODO Auto-generated method stub
+		new ShapeCalcController("Shape Calculator");
+		
 
+	}
+
+}
